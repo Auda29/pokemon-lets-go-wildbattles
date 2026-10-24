@@ -9,7 +9,10 @@ The initial setup on 2026-10-24 created these ignored directories:
 ```text
 local/
   downloads/LetsGoRecomp-0.7.1-windows.zip
+  game-input/eevee-base-v0.nsp
+  game-input/eevee-base-nca/
   runtime/LetsGoRecomp/LetsGoRecomp.exe
+  tools/nstool/nstool.exe
   upstream/
 ```
 
@@ -53,7 +56,7 @@ The pinned upstream build detection identifies Eevee 1.0.0 using both of these v
 - Program ID in `main.npdm`: `0100187003A36000`.
 - First eight module-ID bytes at offset `0x40` in `exefs/main`: `0a3f0d21e67dad80`.
 
-These are identifiers from upstream's `runtime/gamesetup.c`, not a validation result for any local game dump. No dump was available during initial setup.
+These are identifiers from upstream's `runtime/gamesetup.c`, not a validation result for the local game package. A subsequently supplied base NSP was unpacked to encrypted NCA files. Its metadata declares the expected Application ID and package version 0, but ExeFS/RomFS decryption is blocked by missing local `prod.keys`. The user's own Switch-derived keys or an already extracted game directory are required to continue. Keep key values out of chat and public Git history.
 
 In the launcher:
 

@@ -1,10 +1,10 @@
 # Implementation roadmap
 
-Milestone 0 is in progress. The unmodified v0.7.1 runtime is prepared locally and its launcher process and initial Vulkan setup were checked. Gameplay is blocked by missing local game data. No feature implementation or gameplay verification has been completed. See the [baseline report](BASELINE_REPORT.md).
+Milestone 0 is in progress. The unmodified v0.7.1 runtime is prepared locally and its launcher process and initial Vulkan setup were checked. A supplied base NSP is unpacked locally; decrypting its game content is blocked by missing local keys. No feature implementation or gameplay verification has been completed. See the [baseline report](BASELINE_REPORT.md).
 
 ## Milestone 0: reproduce the upstream baseline
 
-Current status: source pinned and official Windows package prepared. Every gameplay check below remains unrun.
+Current status: source pinned, official Windows package prepared, and base NSP unpacked to NCA files. ExeFS/RomFS extraction and every gameplay check below remain unrun.
 
 - Check out the commit recorded in [upstream research](UPSTREAM_RESEARCH.md) in separate local development storage.
 - Follow that revision's build instructions using a locally supplied Eevee 1.0.0 dump.
