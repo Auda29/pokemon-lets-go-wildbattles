@@ -38,6 +38,8 @@ The Switch reference targets 1.0.2. That does not establish compatibility with t
 
 - [Gameplay specification](docs/GAMEPLAY.md)
 - [Upstream research and sources](docs/UPSTREAM_RESEARCH.md)
+- [Local runtime setup](docs/LOCAL_SETUP.md)
+- [Baseline verification report](docs/BASELINE_REPORT.md)
 - [Implementation roadmap](docs/ROADMAP.md)
 - [Verification plan](docs/TEST_PLAN.md)
 - [Contributing](CONTRIBUTING.md)

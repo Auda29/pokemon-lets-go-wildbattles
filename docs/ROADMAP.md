@@ -1,8 +1,10 @@
 # Implementation roadmap
 
-All milestones are pending. This setup contains documentation only. There are no runtime measurements or implementation estimates yet.
+Milestone 0 is in progress. The unmodified v0.7.1 runtime is prepared locally and its launcher process and initial Vulkan setup were checked. Gameplay is blocked by missing local game data. No feature implementation or gameplay verification has been completed. See the [baseline report](BASELINE_REPORT.md).
 
 ## Milestone 0: reproduce the upstream baseline
+
+Current status: source pinned and official Windows package prepared. Every gameplay check below remains unrun.
 
 - Check out the commit recorded in [upstream research](UPSTREAM_RESEARCH.md) in separate local development storage.
 - Follow that revision's build instructions using a locally supplied Eevee 1.0.0 dump.
